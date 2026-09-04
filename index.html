@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP JavaScript — Tema: Handphone</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            min-height: 100vh;
+            padding: 40px 20px;
+            color: #fff;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #a78bfa;
+            letter-spacing: 2px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: #94a3b8;
+            margin-bottom: 40px;
+            font-size: 0.95rem;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .card {
+            background: rgba(255, 255, 255, 0.07);
+            border: 1px solid rgba(167, 139, 250, 0.3);
+            border-radius: 16px;
+            padding: 28px;
+            width: 280px;
+            backdrop-filter: blur(10px);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 32px rgba(167, 139, 250, 0.3);
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+            margin-bottom: 14px;
+        }
+
+        .card h2 {
+            font-size: 1.1rem;
+            color: #c4b5fd;
+            margin-bottom: 4px;
+        }
+
+        .card .merk {
+            font-size: 0.8rem;
+            color: #94a3b8;
+            margin-bottom: 16px;
+        }
+
+        .card .info-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            font-size: 0.9rem;
+        }
+
+        .card .info-row:last-child {
+            border-bottom: none;
+        }
+
+        .card .info-row .label {
+            color: #94a3b8;
+        }
+
+        .card .info-row .value {
+            color: #e2e8f0;
+            font-weight: 600;
+        }
+
+        .card .harga {
+            margin-top: 16px;
+            background: linear-gradient(90deg, #7c3aed, #a78bfa);
+            border-radius: 8px;
+            padding: 10px 14px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 1rem;
+            letter-spacing: 0.5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ================================================ -->
+    <!-- TUGAS OOP JavaScript — Tema: Handphone          -->
+    <!-- ================================================ -->
+
+    <h1>📱 OOP JavaScript</h1>
+    <p class="subtitle">Tema: Handphone — Kelas XI</p>
+
+    <div class="container" id="output"></div>
+
+    <!-- 1. Membuat Class Handphone -->
+    <script>
+        class Handphone {
+
+            // 2. Membuat Properti
+            constructor(namaHP, hargaHP, merkHP, tahunRilis) {
+                this.namaHP = namaHP;
+                this.hargaHP = hargaHP;
+                this.merkHP = merkHP;
+                this.tahunRilis = tahunRilis;
+            }
+
+            // 3. Membuat Metod: Tampil Data
+            tampilData() {
+                console.log("================================");
+                console.log("Nama HP     : " + this.namaHP);
+                console.log("Harga HP    : Rp" + this.hargaHP.toLocaleString());
+                console.log("Merk HP     : " + this.merkHP);
+                console.log("Tahun Rilis : " + this.tahunRilis);
+                console.log("================================");
+            }
+
+            // Metod untuk render ke HTML
+            renderCard(icon) {
+                return `
+                    <div class="card">
+                        <div class="card-icon">${icon}</div>
+                        <h2>${this.namaHP}</h2>
+                        <p class="merk">${this.merkHP}</p>
+                        <div class="info-row">
+                            <span class="label">Tahun Rilis</span>
+                            <span class="value">${this.tahunRilis}</span>
+                        </div>
+                        <div class="harga">Rp${this.hargaHP.toLocaleString('id-ID')}</div>
+                    </div>
+                `;
+            }
+        }
+
+        // 4. Mengisi Object lebih dari 1
+        const hp1 = new Handphone("Samsung Galaxy S25", 14999000, "Samsung", 2025);
+        const hp2 = new Handphone("iPhone 16 Pro", 22000000, "Apple", 2024);
+        const hp3 = new Handphone("Xiaomi 15 Ultra", 12500000, "Xiaomi", 2025);
+
+        // Tampilkan di console
+        hp1.tampilData();
+        hp2.tampilData();
+        hp3.tampilData();
+
+        // Tampilkan di halaman web
+        const icons = ["📱", "🍎", "🔴"];
+        const hpList = [hp1, hp2, hp3];
+        const container = document.getElementById("output");
+
+        hpList.forEach((hp, i) => {
+            container.innerHTML += hp.renderCard(icons[i]);
+        });
+    </script>
+</body>
+
+</html>
