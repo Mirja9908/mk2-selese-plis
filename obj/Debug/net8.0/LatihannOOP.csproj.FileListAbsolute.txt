@@ -1,0 +1,15 @@
+D:\Documents\SMK Telkom Mirza\PELAJARAN Kelas XI\MK2\plis bener\mk2-selese-plis\bin\Debug\net8.0\LatihannOOP.exe
+D:\Documents\SMK Telkom Mirza\PELAJARAN Kelas XI\MK2\plis bener\mk2-selese-plis\bin\Debug\net8.0\LatihannOOP.deps.json
+D:\Documents\SMK Telkom Mirza\PELAJARAN Kelas XI\MK2\plis bener\mk2-selese-plis\bin\Debug\net8.0\LatihannOOP.runtimeconfig.json
+D:\Documents\SMK Telkom Mirza\PELAJARAN Kelas XI\MK2\plis bener\mk2-selese-plis\bin\Debug\net8.0\LatihannOOP.dll
+D:\Documents\SMK Telkom Mirza\PELAJARAN Kelas XI\MK2\plis bener\mk2-selese-plis\bin\Debug\net8.0\LatihannOOP.pdb
+D:\Documents\SMK Telkom Mirza\PELAJARAN Kelas XI\MK2\plis bener\mk2-selese-plis\obj\Debug\net8.0\LatihannOOP.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\SMK Telkom Mirza\PELAJARAN Kelas XI\MK2\plis bener\mk2-selese-plis\obj\Debug\net8.0\LatihannOOP.AssemblyInfoInputs.cache
+D:\Documents\SMK Telkom Mirza\PELAJARAN Kelas XI\MK2\plis bener\mk2-selese-plis\obj\Debug\net8.0\LatihannOOP.AssemblyInfo.cs
+D:\Documents\SMK Telkom Mirza\PELAJARAN Kelas XI\MK2\plis bener\mk2-selese-plis\obj\Debug\net8.0\LatihannOOP.csproj.CoreCompileInputs.cache
+D:\Documents\SMK Telkom Mirza\PELAJARAN Kelas XI\MK2\plis bener\mk2-selese-plis\obj\Debug\net8.0\LatihannOOP.sourcelink.json
+D:\Documents\SMK Telkom Mirza\PELAJARAN Kelas XI\MK2\plis bener\mk2-selese-plis\obj\Debug\net8.0\LatihannOOP.dll
+D:\Documents\SMK Telkom Mirza\PELAJARAN Kelas XI\MK2\plis bener\mk2-selese-plis\obj\Debug\net8.0\refint\LatihannOOP.dll
+D:\Documents\SMK Telkom Mirza\PELAJARAN Kelas XI\MK2\plis bener\mk2-selese-plis\obj\Debug\net8.0\LatihannOOP.pdb
+D:\Documents\SMK Telkom Mirza\PELAJARAN Kelas XI\MK2\plis bener\mk2-selese-plis\obj\Debug\net8.0\LatihannOOP.genruntimeconfig.cache
+D:\Documents\SMK Telkom Mirza\PELAJARAN Kelas XI\MK2\plis bener\mk2-selese-plis\obj\Debug\net8.0\ref\LatihannOOP.dll
